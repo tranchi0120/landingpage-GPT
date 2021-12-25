@@ -1,0 +1,21 @@
+.header {
+  padding-top: 20px;
+  &-main {
+    padding: 20px 0;
+    gap: 70px;
+    display: flex;
+
+    text-align: center;
+  }
+
+  &-image {
+    max-width: 63px;
+  }
+  &-img {
+    width: 100%;
+    object-fit: cover;
+  }
+  &-button {
+    margin-left: auto;
+  }
+}

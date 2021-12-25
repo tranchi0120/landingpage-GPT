@@ -1,0 +1,41 @@
+.banner {
+  margin-bottom: 150px;
+  &-main {
+    border-radius: 5px;
+    background: linear-gradient(90deg, #ae67fa 0%, #f49867 100%);
+    display: flex;
+  }
+  &-content {
+    padding: 53px 95px 55px 46px;
+  }
+  &-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 30px;
+    color: #0e0e0e;
+  }
+  &-title {
+    font-weight: 800;
+    line-height: 45px;
+    font-size: 24px;
+    color: #000000;
+  }
+  &-button {
+    padding-top: 25px;
+    text-align: center;
+    height: 43px;
+    margin: 55px 0;
+    margin-left: 170px;
+    text-align: center;
+    color: #fff;
+    background: #000;
+    width: 160px;
+    border-radius: 40px;
+    justify-content: center;
+  }
+  &-button:hover {
+    cursor: pointer;
+    color: #000;
+    background: #fff;
+  }
+}

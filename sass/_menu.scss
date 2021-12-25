@@ -1,0 +1,22 @@
+.menu {
+  margin: 0;
+  gap: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &-link {
+    color: #ffffff;
+    font-weight: 500;
+  }
+  &-item :hover {
+    color: #ff4820;
+  }
+  &-button {
+    font-size: 18px;
+    padding-left: auto;
+  }
+  &-item {
+    font-size: 18px;
+  }
+}

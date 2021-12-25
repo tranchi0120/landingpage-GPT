@@ -1,0 +1,18 @@
+.happen {
+  margin-bottom: 155px;
+  &-title {
+    width: 700px;
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    background: linear-gradient(90deg, #ae67fa 0%, #f49867 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  &-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+  }
+}

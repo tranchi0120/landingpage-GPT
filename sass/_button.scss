@@ -1,0 +1,27 @@
+.button {
+  margin-top: -20px;
+  gap: 26px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+
+  border-radius: 5px;
+  &-secondary {
+    background: #ff4820;
+    width: 152px;
+    padding: 20px 0;
+    border-radius: 5px;
+    text-align: center;
+  }
+  &-primary:hover {
+    color: #ff4820;
+  }
+  &-secondary:hover {
+    color: #ff4820;
+    background: #ffffff;
+  }
+}

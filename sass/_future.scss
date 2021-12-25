@@ -1,0 +1,44 @@
+.future {
+  margin-bottom: 30px;
+  &-main {
+    gap: 70px;
+    display: flex;
+  }
+  //   future-left
+  &-title {
+    width: 426px;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 45px;
+    background: linear-gradient(90deg, #ae67fa 0%, #f49867 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 30px;
+  }
+  &-link {
+    color: #ff8a71;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  //   future-right
+
+  &-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &-event {
+    width: 170px;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+  }
+  &-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #81afdd;
+  }
+}
