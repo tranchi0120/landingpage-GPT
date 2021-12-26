@@ -64,6 +64,9 @@ body {
   .header-button {
     display: none;
   }
+  .header-image {
+    margin-left: 30px;
+  }
 }
 
 .menu {
@@ -73,10 +76,18 @@ body {
   justify-content: space-between;
 }
 .menu-toggle {
+  padding: 10px;
+  margin-left: auto;
+  display: none;
+  width: 4rem;
+  height: 4rem;
+  color: #ffffff;
+}
+.menu-close {
   margin-left: auto;
   display: none;
   width: 3rem;
-  height: 3rem;
+  margin-top: 20px;
   color: #ffffff;
 }
 .menu-link {
@@ -156,6 +167,9 @@ body {
   }
   .menu-item:first-child {
     margin-top: 40px;
+  }
+  .menu-close {
+    display: block;
   }
 }
 
