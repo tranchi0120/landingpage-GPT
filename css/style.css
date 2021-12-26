@@ -151,7 +151,7 @@ body {
     bottom: 0;
     width: 300px;
     background: #042c54;
-    box-shadow: rgba(0, 0, 0, 0.5);
+    box-shadow: rgba(48, 45, 88, 0.651);
     flex-direction: column;
     align-items: stretch;
     z-index: 9;
@@ -161,9 +161,6 @@ body {
   }
   .menu.is-show {
     transform: translateX(0);
-  }
-  .menu-item {
-    padding: 15px;
   }
   .menu-item:first-child {
     margin-top: 40px;
@@ -294,6 +291,9 @@ body {
   .hero-main {
     flex-direction: column-reverse;
   }
+  .hero-img {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 767px) {
   .hero-main {
@@ -304,9 +304,6 @@ body {
   }
   .hero-text {
     width: 100%;
-  }
-  .hero-image {
-    max-width: 350px;
   }
   .hero-img {
     width: 100%;

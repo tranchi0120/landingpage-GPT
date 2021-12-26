@@ -10,9 +10,10 @@ close.addEventListener("click", function () {
   menu.classList.remove(activeClass);
 });
 
-// window.addEventListener("click", function (e) {
-//   if (!menu.contains(e.target) && !e.target.matches(".menu-toggle")) {
-//     menu.classList.remove(activeClass);
-//   }
-// });
+
+window.addEventListener("click", function (e) {
+  if (!menu.contains(e.target) && !e.target.matches(".menu-toggle")) {
+    menu.classList.remove(activeClass);
+  }
+});
 
