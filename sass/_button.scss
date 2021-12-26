@@ -1,14 +1,4 @@
 .button {
-  margin-top: -20px;
-  gap: 26px;
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #ffffff;
-  text-align: center;
-  cursor: pointer;
-
   border-radius: 5px;
   &-secondary {
     background: #ff4820;
@@ -24,11 +14,4 @@
     color: #ff4820;
     background: #ffffff;
   }
-
-  // @media screen and (min-width: 768px) and (max-width: 1023px) {
-  //   display: none;
-  // }
-  // @media screen and (max-width: 767.98px) {
-  //   display: none;
-  // }
 }

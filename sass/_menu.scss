@@ -3,8 +3,14 @@
   gap: 50px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 
+  &-toggle {
+    margin-left: auto;
+    display: none;
+    width: 3rem;
+    height: 3rem;
+    color: #ffffff;
+  }
   &-link {
     color: #ffffff;
     font-weight: 500;
@@ -13,8 +19,17 @@
     color: #ff4820;
   }
   &-button {
+    padding-left: 60px;
+    margin-top: -20px;
+    gap: 26px;
     font-size: 18px;
-    padding-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    margin-left: auto;
   }
   &-item {
     font-size: 18px;
@@ -22,6 +37,9 @@
 
   @media screen and (min-width: 1024px) and (max-width: 1366px) {
     gap: 0 30px;
+    &-button {
+      padding-left: 20px;
+    }
   }
   @media screen and (min-width: 768px) and (max-width: 1023px) {
     display: none;
@@ -36,5 +54,34 @@
     margin-top: 100px;
     display: flex;
     flex-direction: column;
+
+    &-toggle {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    position: fixed;
+    top: -100px;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    background: #042c54;
+    box-shadow: rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    align-items: stretch;
+    z-index: 9;
+    transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform: translateX(100%);
+    justify-content: normal;
+    &.is-show {
+      transform: translateX(0);
+    }
+    &-item {
+      padding: 15px;
+    }
+    &-item:first-child {
+      margin-top: 40px;
+    }
   }
 }
