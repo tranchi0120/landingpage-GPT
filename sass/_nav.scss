@@ -1,12 +1,17 @@
 .nav {
   margin-bottom: 130px;
   &-main {
-    padding: 0 300px;
+    margin: 0 auto;
     justify-content: center;
     width: 670px;
     height: 24px;
   }
   &-img {
     width: 100%;
+  }
+  @media screen and (max-width: 767.98px) {
+    &-main {
+      width: 300px;
+    }
   }
 }

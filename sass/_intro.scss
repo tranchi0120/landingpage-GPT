@@ -85,4 +85,43 @@
       color: #81afdd;
     }
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    &-top {
+      flex-wrap: wrap;
+    }
+    &-center {
+      display: block;
+    }
+    &-bottom {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &-box {
+      &-content {
+        margin-top: -20px;
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    &-top {
+      flex-wrap: wrap;
+    }
+    &-center {
+      display: block;
+      &-title {
+        width: 100%;
+      }
+    }
+    &-bottom {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &-box {
+      &-content {
+        margin-top: -20px;
+      }
+    }
+    &-main {
+      padding: 25px;
+    }
+  }
 }

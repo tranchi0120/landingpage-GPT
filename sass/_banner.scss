@@ -1,6 +1,7 @@
 .banner {
   margin-bottom: 150px;
   &-main {
+    gap: 150px;
     border-radius: 5px;
     background: linear-gradient(90deg, #ae67fa 0%, #f49867 100%);
     display: flex;
@@ -25,7 +26,7 @@
     text-align: center;
     height: 43px;
     margin: 55px 0;
-    margin-left: 170px;
+    // margin-left: 170px;
     text-align: center;
     color: #fff;
     background: #000;
@@ -37,5 +38,55 @@
     cursor: pointer;
     color: #000;
     background: #fff;
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1366px) {
+    &-button {
+      margin-left: 0;
+    }
+    &-main {
+      gap: 10px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    &-button {
+      margin-top: 80px;
+      margin-right: 50px;
+      width: 300px;
+      margin-left: 0;
+    }
+    &-content {
+      padding: 20px 95px 55px 46px;
+    }
+    &-main {
+      gap: 0;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    &-main {
+      height: 400px;
+      display: block;
+    }
+
+    &-button {
+      margin-left: 150px;
+      height: auto;
+      padding: 15px 15px;
+      margin-top: -20px;
+      margin-right: 40px;
+    }
+    &-center {
+      padding: 25px 15px;
+    }
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 767px) {
+    &-main {
+      height: 300px;
+    }
+    &-button {
+      margin-left: 350px;
+    }
   }
 }

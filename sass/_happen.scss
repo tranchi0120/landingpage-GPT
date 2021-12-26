@@ -12,7 +12,27 @@
   }
   &-box {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 50px;
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1366px) {
+    &-box {
+      gap: 20px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    &-box {
+      gap: 30px;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    &-title {
+      width: 100%;
+    }
+    &-box {
+      display: block;
+    }
   }
 }

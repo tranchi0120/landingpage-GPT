@@ -41,4 +41,40 @@
     line-height: 24px;
     color: #81afdd;
   }
+  @media screen and (min-width: 1024px) and (max-width: 1366px) {
+    &-main {
+      gap: 0 40px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    margin-bottom: 80px;
+    &-main {
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    &-title {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    &-main {
+      display: block;
+    }
+    &-title {
+      width: 100%;
+    }
+    &-box {
+      display: block;
+    }
+    &-event {
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 767px) {
+    &-box {
+      margin-bottom: 50px;
+    }
+  }
 }

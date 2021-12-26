@@ -12,7 +12,7 @@
 
   //   hero-content
   &-content {
-    width: 780px;
+    max-width: 780px;
   }
   &-title {
     background: linear-gradient(90deg, #ae67fa 0%, #f49867 100%);
@@ -49,6 +49,7 @@
     border-radius: 5px 0 0 5px;
     padding-left: 20px;
   }
+
   &-btn {
     font-weight: 700;
     font-size: 20px;
@@ -86,6 +87,67 @@
       line-height: 37.61px;
       font-size: 12px;
       color: #ffffff;
+    }
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1366px) {
+    &-content {
+      max-width: 520px;
+    }
+    &-title {
+      width: 550px;
+    }
+    &-text {
+      width: 400px;
+    }
+    &-img {
+      margin-left: -60px;
+      width: 550px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    &-main {
+      flex-direction: column-reverse;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    &-main {
+      flex-direction: column-reverse;
+    }
+
+    &-title {
+      width: 100%;
+    }
+    &-text {
+      width: 100%;
+    }
+    &-image {
+      max-width: 350px;
+    }
+    &-img {
+      width: 100%;
+    }
+    &-view {
+      flex-wrap: wrap;
+    }
+    &-ip {
+      width: 100%;
+    }
+    &-btn {
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 767px) {
+    &-content {
+      width: 100%;
+    }
+    &-image {
+      max-width: 100%;
+    }
+    &-btn {
+      width: 180px;
     }
   }
 }
